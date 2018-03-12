@@ -2,7 +2,7 @@ package Behaviours;
 
 public interface ISell {
 
-    public String Markup(String markup);
+    public double Markup(double markup);
 
 
 }
