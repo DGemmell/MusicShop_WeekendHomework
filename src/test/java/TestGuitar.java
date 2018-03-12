@@ -1,6 +1,6 @@
 import Instruments.Guitar;
 import Instruments.InstrumentType;
-import Shop.Instrument;
+import MusicShop.Instrument;
 import org.junit.Before;
 import org.junit.Test;
 

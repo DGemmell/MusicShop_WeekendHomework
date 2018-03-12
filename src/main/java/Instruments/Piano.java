@@ -1,21 +1,21 @@
 package Instruments;
 
-import Behaviours.IPlay;
-import Shop.Instrument;
+import MusicShop.Instrument;
 
 public class Piano extends Instrument {
 
     private InstrumentType type;
-    private String manufacturer;
     private String key;
     private int pedal;
 
-    public Piano(String material,InstrumentType type, String manufacturer, String key, int pedal) {
-        super(material);
-        this.manufacturer = manufacturer;
+    public Piano(String material, String manufacturer, InstrumentType type, String key, int pedal) {
+        super(material, manufacturer);
+        this.type = type;
         this.key = key;
         this.pedal = pedal;
     }
+
+
 
     public InstrumentType getType() {
         return type;
@@ -32,7 +32,7 @@ public class Piano extends Instrument {
     }
 
     @Override
-    public String play(String instrument) {
-        return "I am playing the " + instrument;
+    public String play(String sound) {
+        return "I am playing the " + sound;
     }
 }

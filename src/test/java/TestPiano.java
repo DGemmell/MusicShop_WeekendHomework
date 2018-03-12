@@ -1,6 +1,6 @@
 import Instruments.InstrumentType;
 import Instruments.Piano;
-import Shop.Instrument;
+import MusicShop.Instrument;
 import org.junit.Before;
 import org.junit.Test;
 

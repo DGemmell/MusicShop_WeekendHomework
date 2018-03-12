@@ -1,7 +1,6 @@
 package Instruments;
 
-import Behaviours.IPlay;
-import Shop.Instrument;
+import MusicShop.Instrument;
 
 public class Guitar extends Instrument {
 
@@ -9,12 +8,14 @@ public class Guitar extends Instrument {
     private int string;
     private String tuners;
 
-    public Guitar(String material, InstrumentType type, int string, String tuners) {
-        super(material);
+    public Guitar(String material, String manufacturer, InstrumentType type, int string, String tuners) {
+        super(material, manufacturer);
         this.type = type;
         this.string = string;
         this.tuners = tuners;
     }
+
+
 
     public InstrumentType getType() {
         return type;

@@ -2,7 +2,7 @@ package Behaviours;
 
 public interface IPlay {
 
-    public String play(String instrument);
+    public String play(String Sound);
 }
 
 
