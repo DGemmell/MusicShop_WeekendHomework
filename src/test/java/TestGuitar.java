@@ -4,6 +4,8 @@ import Shop.Instrument;
 import org.junit.Before;
 import org.junit.Test;
 
+import static junit.framework.TestCase.assertEquals;
+
 public class TestGuitar {
 
         Instrument material;
@@ -18,6 +20,22 @@ public class TestGuitar {
         }
 
     @Test
-    public void name() {
+    public void getmaterial() {
+            assertEquals("wood",guitar.getMaterial());
+    }
+
+    @Test
+    public void getType() {
+            assertEquals(InstrumentType.GUITAR, guitar.getType());
+    }
+
+    @Test
+    public void getNumberOfStrings() {
+            assertEquals(6, guitar.getString());
+    }
+
+    @Test
+    public void getTuners() {
+            assertEquals("fine tuners", guitar.getTuners());
     }
 }
